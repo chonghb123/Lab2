@@ -15,9 +15,10 @@ def find_min_max(temp):
     mintemp = min(temp)
     maxtemp = max(temp)
     min_max = []
-    min_max.append(min)
-    min_max.append(max)
+    min_max.append(mintemp)
+    min_max.append(maxtemp)
     return min_max
+
 def sort_temperature(temp):
     
     return sorted(temp)
@@ -33,14 +34,13 @@ def calc_median_temperature(sorted):
 
 def main():
     x = get_user_input()
-    print(x)
     calc_average(x)
     find_min_max(x)
     y = sort_temperature(x)
-    print(y)
     print(calc_median_temperature(y))
 
 
-main()
+if __name__ == "__main__":
+    main()
     
           
