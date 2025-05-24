@@ -21,6 +21,6 @@ def app():
     print(classify_bmi(output))
     return
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     app()
 
